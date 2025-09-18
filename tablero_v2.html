@@ -1,0 +1,30 @@
+<style>
+	.rojo {
+		background-color:red;
+	}
+	.blanca {
+		background-color:white;
+	}
+</style>
+<table border="1px">
+  <script>
+	let x = 1;
+	let html = "";
+	for (let i = 1; i<=8; i++) {
+	  html = html + "<tr>";
+	  for (let j = 1; j<=8; j++) {
+	    html = html + "<td class='";
+			if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+				html = html + "rojo";
+			} else {
+				html = html + "blanca";
+			}
+	    html = html + "'>"+ x +"</td>";
+	    x++;
+	  }
+	  html = html + "</tr>";
+    }
+    document.write(html);
+  </script>	
+</table>
+
