@@ -1,0 +1,24 @@
+<script>
+	function efe (palabra) {
+		resultado = "";
+		for (let i=0; i<palabra.length; i++) {		
+			let letra = palabra[i];
+			if (letra == "a" || letra == "e" ||
+				letra == "i" || letra == "o" ||
+				letra == "u") {
+				resultado += letra + "f" + letra;
+			} else {
+				resultado += letra;
+			}
+		}
+		return resultado;
+	}
+	
+	document.write(efe("mariana"));
+	document.write("<br>");
+	document.write(efe("axel"));
+	document.write("<br>");
+	document.write(efe("sopes"));
+	document.write("<br>");
+
+</script> 
