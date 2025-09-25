@@ -1,0 +1,20 @@
+<script>
+	palabra = "hola";
+	resultado = "";
+	
+	for (let i=0; i<palabra.length; i++) {
+		//document.write("<li>"+palabra[i]+"</li>");
+		
+		let letra = palabra[i];
+		if (letra == "a" || letra == "e" ||
+		    letra == "i" || letra == "o" ||
+		    letra == "u") {
+			resultado += letra + "f" + letra;
+		} else {
+			resultado += letra;
+		}
+	}
+	
+	document.write(resultado);	
+	
+</script> 
